@@ -10,7 +10,9 @@ import org.springframework.context.annotation.ComponentScan;
 	"trajy.hrpayroll.model"
 })
 @ComponentScan(basePackages = {
-	"trajy.hrpayroll.controller"
+	"trajy.hrpayroll.config",
+	"trajy.hrpayroll.controller",
+	"trajy.hrpayroll.service"
 })
 public class HrpayrollApplication {
 
