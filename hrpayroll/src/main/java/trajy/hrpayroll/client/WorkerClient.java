@@ -8,7 +8,8 @@ import trajy.hrpayroll.model.Worker;
 
 @FeignClient(
     name = "hrworker",
-    url = "${hrworker.host}/workers"
+    path = "/workers"
+
 )
 public interface WorkerClient {
 
