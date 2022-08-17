@@ -6,8 +6,6 @@ import trajy.hrpayroll.client.WorkerClient;
 import trajy.hrpayroll.model.Payment;
 import trajy.hrpayroll.model.Worker;
 
-import static trajy.hrpayroll.model.Payment.builder;
-
 @Service
 public class PaymentService {
 
@@ -16,7 +14,7 @@ public class PaymentService {
 
     public Payment getPayment(Long workerId, Integer days) {
         Worker worker = client.findById(workerId).getBody();
-        Payment payment = builder().name(worker.getName()).dailyInCome(worker.getDailyInCome()).days(days).build();
+        Payment payment = Payment.builder().name(worker.getName()).dailyInCome(worker.getDailyInCome()).days(days).build();
         return payment;
     }
 
