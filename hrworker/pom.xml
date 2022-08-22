@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>trajy</groupId>
-	<artifactId>hrworker</artifactId>
+	<artifactId>hr-worker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hrworker</name>
 	<description>Demo project for Spring Boot with Microservices</description>
@@ -25,7 +25,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -48,7 +47,24 @@
 			<version>1.18.24</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<version>2.1.6.RELEASE</version>
+		</dependency>
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Hoxton.SR8</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>

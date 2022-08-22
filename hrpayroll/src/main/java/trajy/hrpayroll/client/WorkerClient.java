@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import trajy.hrpayroll.model.Worker;
 
 @FeignClient(
-    name = "hrworker",
+    name = "hr-worker",
     path = "/workers"
-
 )
 public interface WorkerClient {
 

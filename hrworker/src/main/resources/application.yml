@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hrworker
+    name: hr-worker
 
   #Database configuration
   datasource:
@@ -18,5 +18,10 @@ spring:
       ddl-auto: create-drop
     show-sql: true
 
+#Eureka (Service-Registry) configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
 server:
   port: 8001
