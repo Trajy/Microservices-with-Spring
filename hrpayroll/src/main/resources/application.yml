@@ -8,6 +8,19 @@ eureka:
     service-url:
       defaultZone=http: http://localhost:8761/eureka
 
+#Ribbon (Load Balancer) configuration
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 20000
+
 server:
   port: 8101
 
+#Hystrix (Circuit breaker) configuration
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
