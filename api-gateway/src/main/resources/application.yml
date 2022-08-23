@@ -12,7 +12,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 #Zuul (Api-gateway) configuration
-
 zuul:
   routes:
     worker:
@@ -21,3 +20,21 @@ zuul:
     payroll:
       service-id: hr-payroll
       path: /hr-payroll/**
+
+
+# IMPORTANT
+# by default zuul timeout is 1 second, so if a diferent timeout is setting into any microservice configuration (.yml or .properties) file
+# you have copy this configuration here to overhide the zuul default timeout.
+# on the other hand if you have this configurations only here, Hystrix will call the fall back method because by default Ribbon timeout is 1 second.
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 20000
