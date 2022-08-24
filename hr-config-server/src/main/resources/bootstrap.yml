@@ -1,10 +1,11 @@
-repository:
-  path:
-
 spring:
   cloud:
+    # Configs for config-server
     config:
       server:
         git:
+          uri: https://github.com/Trajy/Microservices-with-Spring
+          default-label: main #branch to get configurations
           default-path: hr-config-server/src/main/resources
-          search-paths: ${spring.cloud.config.server.git.default-path}/hr-worker
+          search-paths:
+            - ${spring.cloud.config.server.git.default-path}/hr-worker
