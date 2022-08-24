@@ -1,3 +1,14 @@
 spring:
   application:
     name: hr-config-server
+
+  #configs for Spring cloud
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Trajy/Microservices-with-Spring
+          default-label: main #branch to get configurations
+
+server:
+  port: 8888 #default port for config-server is 8888

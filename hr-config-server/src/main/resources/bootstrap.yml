@@ -1,0 +1,10 @@
+repository:
+  path:
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-path: hr-config-server/src/main/resources
+          search-paths: ${spring.cloud.config.server.git.default-path}/hr-worker
