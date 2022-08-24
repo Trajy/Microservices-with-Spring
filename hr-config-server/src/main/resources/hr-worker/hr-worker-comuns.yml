@@ -1,2 +1,2 @@
 test:
-  config: this is a simple config test to get configs via end-point
+  config: this config is changed to make a test in spring actuator (refresh configs in projects)
