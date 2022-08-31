@@ -1,0 +1,5 @@
+#Configs for all microservices
+
+server:
+  port: ${PORT:0}
+  

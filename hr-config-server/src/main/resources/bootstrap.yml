@@ -8,4 +8,5 @@ spring:
           default-label: main #branch to get configurations
           default-path: hr-config-server/src/main/resources
           search-paths:
+            - ${spring.cloud.config.server.git.default-path}/general-configs
             - ${spring.cloud.config.server.git.default-path}/hr-worker
