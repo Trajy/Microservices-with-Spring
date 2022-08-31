@@ -32,6 +32,3 @@ eureka:
       defaultZone: http://localhost:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
-
-test:
-  config: this config is changed to make a test in spring actuator (refresh configs in projects)
