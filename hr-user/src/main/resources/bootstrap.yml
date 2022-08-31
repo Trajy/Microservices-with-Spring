@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    profiles: default
+    config:
+      uri: http://localhost:8888
+      name: hr-user
+      profile: comuns
