@@ -10,3 +10,4 @@ spring:
           search-paths:
             - ${spring.cloud.config.server.git.default-path}/general-configs
             - ${spring.cloud.config.server.git.default-path}/hr-worker
+            - ${spring.cloud.config.server.git.default-path}/hr-api-gateway

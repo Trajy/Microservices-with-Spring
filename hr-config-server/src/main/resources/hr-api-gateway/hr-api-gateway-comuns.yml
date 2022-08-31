@@ -11,6 +11,13 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+#Actuator configs (refresh configs from config-server)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 #Zuul (Api-gateway) configuration
 zuul:
   routes:
