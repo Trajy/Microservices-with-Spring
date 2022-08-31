@@ -19,3 +19,4 @@ spring:
             - classpath:/hr-payroll
             - classpath:/hr-oauth
             - classpath:/hr-user
+            - classpath:/hr-service-registry
