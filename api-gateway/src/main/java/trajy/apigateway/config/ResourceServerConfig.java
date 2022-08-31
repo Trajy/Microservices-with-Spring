@@ -28,7 +28,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     private static final String[] ROLE_ADMIN_PATHS = {
         "/hr-payroll/**",
-        //"/hr-user/**"
+        "**/actuator/**"
     };
 
     @Override
