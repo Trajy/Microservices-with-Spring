@@ -17,3 +17,4 @@ spring:
             - classpath:/hr-worker
             - classpath:/hr-api-gateway
             - classpath:/hr-payroll
+            - classpath:/hr-oauth
