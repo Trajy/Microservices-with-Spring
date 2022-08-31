@@ -1,6 +1,8 @@
 spring:
   application:
     name: hr-config-server
+  profiles:
+    active: native
 
 server:
   port: 8888 #default port for config-server is 8888
