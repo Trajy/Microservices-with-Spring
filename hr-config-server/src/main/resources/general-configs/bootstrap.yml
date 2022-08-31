@@ -1,7 +1,0 @@
-#Configs for all microservices
-
-server:
-  port: ${PORT:0}
-
-test:
-  config: this config is changed to make a test in spring actuator (refresh configs in projects)
