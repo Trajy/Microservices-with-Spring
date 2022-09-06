@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://hr-worker-pg12:5432/db_hr_worker
+    username: postgres
+    password: 1234567

@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    properties:
+      javax:
+        persistence:
+          schema-generation:
+            create-source: metadata
+            action: create
+            scripts:
+              create-target: create.sql
+      hibernate:
+        hbm2ddl:
+          delimiter: ;
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_hr_worker
+    username: postgres
+    password: 1234567
