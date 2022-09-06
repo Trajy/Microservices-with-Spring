@@ -12,9 +12,7 @@ spring:
     config:
       uri: http://localhost:8888
       name: ${spring.cloud.search.config}
-      profile:
-        - comuns
-        - test
+      profile: comuns, test
 
 ---
 spring:
@@ -23,9 +21,7 @@ spring:
     config:
       uri: http://localhost:8888
       name: ${spring.cloud.search.config}
-      profile:
-      - comuns
-      - dev
+      profile: comuns, dev
 
 ---
 spring:
@@ -34,6 +30,4 @@ spring:
     config:
       uri: http://localhost:8888
       name: ${spring.cloud.search.config}
-      profile:
-        - comuns
-        - prod
+      profile: comuns, prod
