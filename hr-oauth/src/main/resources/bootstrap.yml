@@ -1,7 +1,33 @@
 spring:
   cloud:
-    profiles: default
+    search:
+      config: hr-oauth
+  profiles:
+    active: test
+
+---
+spring:
+  profiles: default, test
+  cloud:
     config:
       uri: http://localhost:8888
-      name: hr-oauth
-      profile: comuns
+      name: ${spring.cloud.search.config}
+      profile: comuns, test
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: ${spring.cloud.search.config}
+      profile: comuns, dev
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: http://hr-config-server:8888
+      name: ${spring.cloud.search.config}
+      profile: comuns, prod

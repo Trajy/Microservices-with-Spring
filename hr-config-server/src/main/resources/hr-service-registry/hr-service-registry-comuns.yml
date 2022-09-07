@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hr-eureka-server
+    name: hr-service-registry
 
 eureka:
   client:
