@@ -11,6 +11,10 @@ spring:
             - ${spring.cloud.config.server.git.default-path}/general-configs
             - ${spring.cloud.config.server.git.default-path}/hr-worker
             - ${spring.cloud.config.server.git.default-path}/hr-api-gateway
+            - ${spring.cloud.config.server.git.default-path}/hr-payroll
+            - ${spring.cloud.config.server.git.default-path}/hr-oauth
+            - ${spring.cloud.config.server.git.default-path}/hr-user
+            - ${spring.cloud.config.server.git.default-path}/hr-service-registry
         native:
           searchLocations:
             - classpath:/general-configs
