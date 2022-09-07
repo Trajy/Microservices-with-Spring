@@ -21,3 +21,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/db_hr_worker
     username: postgres
     password: 1234567
+
+#Eureka (Service-Registry) configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

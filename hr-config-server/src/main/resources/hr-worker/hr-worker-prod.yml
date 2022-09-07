@@ -11,3 +11,9 @@ spring:
     url: jdbc:postgresql://hr-worker-pg12:5432/db_hr_worker
     username: postgres
     password: 1234567
+
+#Eureka (Service-Registry) configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hr-eureka-server:8761/eureka

@@ -5,12 +5,6 @@ spring:
 server:
   port: 8765 #default port for api-gateway is 8765
 
-# Eureka (Service-registry) configuration
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
 #Actuator configs (refresh configs from config-server)
 management:
   endpoints:
