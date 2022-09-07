@@ -3,18 +3,19 @@ spring:
     properties:
       javax:
         persistence:
-          schema-generation:
-            create-source: metadata
-            scripts:
-              action: create
-              create-target: create.sql
+#          schema-generation: #(commented out to not add create queries to create.sql file)
+#           create-source: metadata #(commented out to not add create queries to create.sql file)
+#           scripts: #(commented out to not add create queries to create.sql file)
+#             action: create #(commented out to not add create queries to create.sql file)
+#             create-target: create.sql #(commented out to not add create queries to create.sql file)
       hibernate:
         hbm2ddl:
           delimiter: ;
         jdbc:
           lob:
             non_contextual_creation: true
-            ddl-auto: none
+    hibernate:
+      ddl-auto: none
   datasource:
     url: jdbc:postgresql://localhost:5433/db_hr_user
     username: postgres
