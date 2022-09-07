@@ -3,7 +3,7 @@ spring:
     search:
       config: hr-user
   profiles:
-    active: test
+    active: dev
 
 ---
 spring:
