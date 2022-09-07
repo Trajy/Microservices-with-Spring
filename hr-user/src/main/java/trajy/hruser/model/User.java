@@ -12,7 +12,7 @@ import java.util.Set;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
-@Entity
+@Entity(name = "tb_user")
 public class User {
 
     @Id

@@ -6,7 +6,7 @@ import javax.persistence.Id;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
-@Entity
+@Entity(name = "tb_role")
 public class Role {
 
     @Id
